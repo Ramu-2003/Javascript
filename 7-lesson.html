@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-7</title>
+</head>
+<body>
+    <script>
+        if (-2) {
+            console.log('truthy');
+        }
+        // if we give null or 0 no value then it consider as falsy
+        // if we give any value then it consider as truthy
+        //  0 is falsy -2 or 6 is truthy
+
+        const products = 5;
+
+        if (products > 0) {
+            console.log('card has products')
+        }
+        //  falsy values : false , 0 , NAN , undefined , null
+
+        console.log ('text'/5); // nan - not a number
+         
+        // ternary operator ? :
+        const var1 = 0 ? 'truthy' : 'falsy';
+        console.log(var1);
+
+        // guard operator && :
+
+        5 && console.log('hello');
+        
+        const var2 =  0 && 'hi';
+        console.log(var2);
+
+        // default operator || :
+
+        const currency = 'inr' || 'usd';
+        console.log(currency);
+        </script>
+</body>
+</html>
