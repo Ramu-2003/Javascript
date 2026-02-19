@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .btn {
+            background-color: blanchedalmond;
+            color: blueviolet;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+            border-radius: 2rem;
+            border-bottom:  2px solid red;
+            border-right: 2px solid red;
+            border-left:  2px solid green;
+            border-top:  2px solid green;
+            padding: 10px;
+            margin: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Hi There</button>
+    <script>
+        document.querySelector('.btn').innerHTML = "hello";
+        document. title = 'overwriting using dom in js';
+
+        // Option 1: Using cssText (write it like a standard CSS string)
+// document.querySelector(".btn").style.cssText = "background: blue; color: white; padding: 10px; border: none;";
+
+// Option 2: Using Object.assign (cleaner for many properties)
+// Object.assign(document.querySelector(".btn").style, {
+//   background: "blue",
+//   color: "white",
+//   padding: "10px",
+//   borderRadius: "5px"
+// });
+
+    </script>
+</body>
+</html>
